@@ -11,13 +11,10 @@ class Movie < Tovar
   end
 
   def to_s
-    puts "Movie #{@name} by #{@director}, #{@year}y., price #{@price}$, amount #{@quantity}pcs."
+   "Movie #{@name} by #{@director}, #{@year}y., price #{@price}$, amount #{@quantity}pcs."
   end
 
-  def self.from_file name
-    current_path = File.dirname '.'
-    path = current_path + '/data/movies/' + name + '.txt'
-
+  def self.from_file path
     file = File.new path
     arr = file.readlines
     file.close

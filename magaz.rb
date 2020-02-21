@@ -1,11 +1,7 @@
 require_relative 'tovar'
 require_relative 'book'
 require_relative 'movie'
+require_relative 'product_collection'
 
-film = Movie.from_file '01'
-puts film.to_s
-
-book = Book.from_file '01'
-puts book.to_s
-
-book = Tovar.from_file '01'
+collect1 = ProductCollection.from_dir(File.dirname(__FILE__) + '/data/')
+puts collect1.sort!(by: :name, order: :asc)

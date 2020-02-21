@@ -11,12 +11,10 @@ class Book < Tovar
   attr_accessor :name, :genre, :author
 
   def to_s
-    puts"#{@genre.capitalize} book #{@name} by #{@author}, price: #{@price}$, amount: #{quantity} pcs."
+    "#{@genre.capitalize} book #{@name} by #{@author}, price: #{@price}$, amount: #{quantity} pcs."
   end
 
-  def self.from_file name
-    current_path = File.dirname '.'
-    path = current_path + '/data/books/' + name + '.txt'
+  def self.from_file path
 
     file = File.new path
     arr = file.readlines
