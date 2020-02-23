@@ -11,7 +11,7 @@ class Movie < Tovar
   end
 
   def to_s
-   "Movie #{@name} by #{@director}, #{@year}y., price #{@price}$, amount #{@quantity}pcs."
+   "Movie #{@name.strip} by #{@director}, #{@year}y., price #{@price}$, amount #{@quantity}pcs."
   end
 
   def self.from_file path

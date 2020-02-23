@@ -11,7 +11,7 @@ class Book < Tovar
   attr_accessor :name, :genre, :author
 
   def to_s
-    "#{@genre.capitalize} book #{@name} by #{@author}, price: #{@price}$, amount: #{quantity} pcs."
+    "#{@genre.capitalize} book #{@name.strip} by #{@author}, price: #{@price}$, amount: #{quantity} pcs."
   end
 
   def self.from_file path

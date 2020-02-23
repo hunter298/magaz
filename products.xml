@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<products>
+  <books>
+    <book price="100" amount="10" author="George Orwel" genre="Antiutopia">
+      1984
+    </book>
+    <book price="90" amount="5" author="Tolkien" genre="Fentesy">
+      Lord of the Rings
+    </book>
+  </books>
+  <movies>
+    <movie price="30" amount="999" director="Watchowsky" year="1999">
+      Matrix
+    </movie>
+  </movies>
+</products>
